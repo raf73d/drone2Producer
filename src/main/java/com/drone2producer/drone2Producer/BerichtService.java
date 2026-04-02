@@ -20,7 +20,7 @@ public class BerichtService {
     private final AmqpTemplate template;
     void create(String berichtString){
         Bericht bericht = new Bericht(berichtString);
-    template.convertAndSend("exchange1", "", new BerichtGemaakt(bericht));
+    template.convertAndSend("exchange1", null, new BerichtGemaakt(bericht));
 }
 
 }
