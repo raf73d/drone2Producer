@@ -6,15 +6,13 @@ package com.drone2producer.drone2Producer;
 
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author rafde
- */
+@CrossOrigin
 @RestController
 public class BerichtController {
 
